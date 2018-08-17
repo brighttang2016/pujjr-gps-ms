@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="F:\apache-maven-3.3.3\dependency\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar" />
+
+	<context id="mysqlMybatis" defaultModelType="conditional">
+		<commentGenerator>
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="true" />
+			<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+		</commentGenerator>
+		<!-- <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://172.18.10.81:3306/pujjr_gps?characterEncoding=UTF-8"
+			userId="xdxt" password="xdxt" /> -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://172.18.10.76:3306/gps?characterEncoding=UTF-8"
+			userId="root" password="Good1234" />
+			
+		<javaModelGenerator targetPackage="com.pujjr.gps.dal.domain"
+			targetProject="pujjr-gps-ms/src/main/java" />
+		<sqlMapGenerator targetPackage="com.pujjr.gps.dal.mapper"
+			targetProject="pujjr-gps-ms/src/main/java" />
+		<javaClientGenerator targetPackage="com.pujjr.gps.dal.dao"
+			targetProject="pujjr-gps-ms/src/main/java" type="XMLMAPPER" />
+
+		<!-- 
+		<table tableName="t_gps_apply" domainObjectName="GpsApply" enableCountByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 
+			selectByExampleQueryId="false"> 
+		</table>
+		
+		
+		<table tableName="t_gps_checkhis" domainObjectName="GpsCheckhis"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_gps_order" domainObjectName="GpsOrder"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_gps_order_detail" domainObjectName="GpsOrderDetail"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_gps_supplier" domainObjectName="GpsSupplier"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		-->
+		<!-- <table tableName="t_gps_send" domainObjectName="GpsSend"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_gps_brand" domainObjectName="GpsBrand"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_gps_store_pj" domainObjectName="GpsStorePj"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table> 
+		<table tableName="t_gps_outstore_pj" domainObjectName="GpsOutstorePj"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+			
+		<table tableName="t_gps_store_branch" domainObjectName="GpsStoreBranch"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>	
+		<table tableName="t_gps_applyback_detail" domainObjectName="GpsApplybackDetail"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>	
+		-->
+	<!-- <table tableName="t_gps_applyback" domainObjectName="GpsApplyback"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>-->
+		<!-- <table tableName="t_gps_brand" domainObjectName="GpsBrand"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>	
+		-->
+
+		<!-- <table tableName="t_gps_lock" domainObjectName="GpsLock"
+
+		</table> -->
+		<!-- <table tableName="t_gps_receive" domainObjectName="GpsReceive"
+
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table> -->
+		<!-- <table tableName="t_gps_instore_his" domainObjectName="GpsInstoreHis"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table> -->	
+		
+		<!-- <table tableName="t_gps_instore_branch" domainObjectName="GpsInstoreBranch"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>	 -->
+		
+		<!-- <table tableName="t_gps_store_branch" domainObjectName="GpsStoreBranch"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>	 -->
+		<!-- <table tableName="t_gps_instore_pj" domainObjectName="GpsInstorePj"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table> -->
+		<!-- <table tableName="t_gps_linkman" domainObjectName="GpsLinkman" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false"> 
+		</table>  -->
+		<!-- <table tableName="t_gps_stocktake" domainObjectName="GpsStocktake" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false"> 
+		</table> -->
+		<!-- <table tableName="t_his_beanmap" domainObjectName="HisBeanMap" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false"> 
+		</table> -->
+		<!-- <table tableName="t_his_fieldcomment" domainObjectName="HisFieldComment" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false"> 
+		</table> -->
+		<!-- 
+		<table tableName="t_his_oper" domainObjectName="HisOper" 
+			enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" 
+			enableSelectByExample="false" selectByExampleQueryId="false"> 
+		</table> -->
+		
+		
+	</context>
+</generatorConfiguration>
