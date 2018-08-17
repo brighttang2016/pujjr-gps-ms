@@ -1,0 +1,2 @@
+≤‚ ‘£∫
+warning: LF will be replaced by CRLF in doc/start_gps.sh.
